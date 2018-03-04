@@ -8,7 +8,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
-      - file: "site/_index.md"
+      - file: "site/_index.yml"
         label: "Home Page"
         name: "home"
         fields:
@@ -16,6 +16,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Opening hours, name: opening_hours, widget: text}
-          # - {label: "Blurb", name: blurb, widget: object, fields: [
-          #     {label: "Heading", name: "heading", widget: string},
-          #     {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Call to action", name: call_to_action, widget: object, fields: [
+              {label: "Enabled", name: "enabled", widget: boolean},
+              {label: "Icon", name: "icon", description: "You can see the icons on https://fontawesome.bootstrapcheatsheets.com/.", widget: select, options: ["film", "glass", "music", "bullhorn", "hearth", "camera-retro", "coffee"]},
+              {label: "Text", name: "text", widget: string},
+              {label: "Button link URL", name: "link", widget: string},
+              {label: "Button text", name: "link_text", widget: string}]}

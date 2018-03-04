@@ -1,14 +1,34 @@
 import shutil
+import io
+
+import logging
+logging.basicConfig(level = logging.DEBUG)
+log = logging.getLogger(__name__)
+
+from yaml import load, Loader
+
 from jinja2 import Environment, FileSystemLoader
-env = Environment(loader=FileSystemLoader('.'))
 
-shutil.rmtree('public', ignore_errors = True)
-shutil.copytree('site', 'public')
+def cleanup():
+    log.debug('Cleaning public folder ...')
+    shutil.rmtree('public', ignore_errors = True)
+    shutil.copytree('site', 'public')
 
-template = env.get_template('site/index.html')
+def generate_output(data):
+    log.debug('Generating output ...')
+    env = Environment(loader = FileSystemLoader('.'))
+    template = env.get_template('site/index.html')
+    template.stream(data).dump('public/index.html')
 
-data = {
+def load_data(filename):
+    log.debug(f'Parsing meta-data from {filename}')
+    with io.open(filename, 'rt', encoding = 'utf-8') as f:
+        content = f.read()
+        data = load(content, Loader = Loader)
+        log.debug(f'Found {data} in {filename}')
+        return data
 
-}
 
-template.stream(data).dump('public/index.html')
+cleanup()
+data = load_data('site/_index.yml')
+generate_output(data)

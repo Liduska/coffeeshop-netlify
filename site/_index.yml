@@ -1,0 +1,11 @@
+---
+title: "TADY BYDLÍ LÁSKA"
+subtitle: "ke kávě a filmu."
+image: /images/logo_400px.png
+opening_hours: "po-pá: 9 - 20<br />so + ne: 14 - 21"
+call_to_action:
+  enabled: true
+  icon: "bullhorn"
+  text: "Nejsi kancelářský typ a miluješ kávu jako my? Tak to hledáme Tebe!"
+  link: "/#kontakty"
+  link_text: "Napiš nám"
