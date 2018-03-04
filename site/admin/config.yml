@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Image, name: image, widget: image}
+          - {label: Image, name: title_background, widget: image}
           - {label: Opening hours, name: opening_hours, widget: text}
           - {label: "Call to action", name: call_to_action, widget: object, fields: [
               {label: "Enabled", name: "enabled", widget: boolean},

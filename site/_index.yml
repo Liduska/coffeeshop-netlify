@@ -1,7 +1,7 @@
 ---
 title: "TADY BYDLÍ LÁSKA"
 subtitle: "ke kávě a filmu."
-image: /images/logo_400px.png
+title_background: /images/kavarna-praha-kino.jpg
 opening_hours: "po-pá: 9 - 20<br />so + ne: 14 - 21"
 call_to_action:
   enabled: true
