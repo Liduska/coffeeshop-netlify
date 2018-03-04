@@ -3,7 +3,7 @@ subtitle: ke kávě a filmu.
 title_background: /images/kavarna-praha-kino.jpg
 opening_hours: 'po-pá: 9 - 20<br />so + ne: 14 - 21'
 call_to_action:
-  enabled: true
+  enabled: false
   icon: glass
   link: '/#kontakty'
   link_text: Napiš nám
