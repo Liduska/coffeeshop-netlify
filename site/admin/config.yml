@@ -7,6 +7,9 @@ public_folder: "/images"
 collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
+    delete: false
+    editor:
+      preview: false
     files:
       - file: "site/_index.yml"
         label: "Home Page"
