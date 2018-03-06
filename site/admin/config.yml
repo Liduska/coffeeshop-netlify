@@ -10,11 +10,11 @@ collections: # A list of collections the CMS should be able to edit
     delete: false
     editor:
       preview: false
+    description: "You can see the icons on https://fontawesome.bootstrapcheatsheets.com/."
     files:
       - file: "site/_index.yml"
         label: "Home Page"
         name: "home"
-        description: "You can see the icons on https://fontawesome.bootstrapcheatsheets.com/."
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
