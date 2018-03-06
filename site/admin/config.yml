@@ -8,8 +8,6 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     delete: false
-    editor:
-      preview: false
     description: "You can see the icons on https://fontawesome.bootstrapcheatsheets.com/."
     files:
       - file: "site/_index.yml"
@@ -24,6 +22,6 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Enabled", name: "enabled", widget: boolean},
               {label: "Icon", name: "icon", widget: select, options: ["film", "glass", "music", "bullhorn", "hearth", "camera-retro", "coffee"]},
               {label: "Title", name: "title", widget: string},
-              {label: "Text", name: "text", widget: string},
+              {label: "Text", name: "text", widget: text},
               {label: "Button link URL", name: "link", widget: string},
               {label: "Button text", name: "link_text", widget: string}]}

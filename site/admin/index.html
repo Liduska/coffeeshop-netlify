@@ -12,5 +12,43 @@
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@1.3.1/dist/cms.js"></script>
+  <script src="https://unpkg.com/nunjucks@3.1.2/browser/nunjucks.js"></script>
+  <script>
+  var HomePreview = createClass({
+
+    renderIframe: function() {
+      var data = this.props.entry.toJS().data;
+      var env = nunjucks.configure('templates', { autoescape: false });
+      var res = env.render('index.html', data);
+
+      var nestedIframe = document.createElement('iframe');
+      nestedIframe.className = 'nested-iframe';
+      nestedIframe.src = 'about:blank';
+
+      while (this.container.hasChildNodes()) {
+          this.container.removeChild(this.container.lastChild);
+      }
+
+      this.container.appendChild(nestedIframe);
+      nestedIframe.contentWindow.document.open('text/html', 'replace');
+      nestedIframe.contentWindow.document.write(res);
+      nestedIframe.contentWindow.document.close();
+    },
+
+    componentDidMount: function() {
+      this.renderIframe();
+    },
+    
+    componentDidUpdate: function() {
+      this.renderIframe();
+    },
+
+    render: function() {
+      return h('div', { ref: (ref) => this.container = ref });
+    }
+  })
+  CMS.registerPreviewStyle('preview.css');
+  CMS.registerPreviewTemplate('home', HomePreview);
+  </script>
 </body>
 </html>

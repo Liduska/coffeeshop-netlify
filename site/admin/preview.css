@@ -1,0 +1,11 @@
+* {
+  height: 100%;
+}
+
+.nested-iframe {
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}

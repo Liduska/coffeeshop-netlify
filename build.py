@@ -1,4 +1,5 @@
 import shutil
+import os
 import io
 
 import logging
@@ -13,6 +14,8 @@ def cleanup():
     log.debug('Cleaning public folder ...')
     shutil.rmtree('public', ignore_errors = True)
     shutil.copytree('site', 'public')
+    os.makedirs('public/admin/templates')
+    shutil.copy('site/index.html', 'public/admin/templates/index.html')
 
 def generate_output(data):
     log.debug('Generating output ...')
