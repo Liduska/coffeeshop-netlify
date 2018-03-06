@@ -14,6 +14,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/_index.yml"
         label: "Home Page"
         name: "home"
+        description: "You can see the icons on https://fontawesome.bootstrapcheatsheets.com/."
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
@@ -21,7 +22,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Opening hours, name: opening_hours, widget: text}
           - {label: "Call to action", name: call_to_action, widget: object, fields: [
               {label: "Enabled", name: "enabled", widget: boolean},
-              {label: "Icon", name: "icon", description: "You can see the icons on https://fontawesome.bootstrapcheatsheets.com/.", widget: select, options: ["film", "glass", "music", "bullhorn", "hearth", "camera-retro", "coffee"]},
+              {label: "Icon", name: "icon", widget: select, options: ["film", "glass", "music", "bullhorn", "hearth", "camera-retro", "coffee"]},
+              {label: "Title", name: "title", widget: string},
               {label: "Text", name: "text", widget: string},
               {label: "Button link URL", name: "link", widget: string},
               {label: "Button text", name: "link_text", widget: string}]}
