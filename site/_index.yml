@@ -1,11 +1,11 @@
 title: TADY BYDLÍ LÁSKA
 subtitle: ke kávě a filmu.
 title_background: /images/kavarna-praha-kino.jpg
-opening_hours: 'po-pá: 9 - 20<br />so + ne: 14 - 21'
+opening_hours: 'po-pá: 9 - 20<br />so + ne: 14 - 21<br />11. března: ZAVŘENO'
 call_to_action:
   enabled: false
   icon: glass
   link: '/#kontakty'
   link_text: Napiš nám
-  title: Nejsi kancelářský typ a miluješ kávu jako my? Tak to hledáme Tebe!
   text: Nejsi kancelářský typ a miluješ kávu jako my? Tak to hledáme Tebe!
+  title: Nejsi kancelářský typ a miluješ kávu jako my? Tak to hledáme Tebe!
