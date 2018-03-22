@@ -1,11 +1,15 @@
 title: TADY BYDLÍ LÁSKA
 subtitle: ke kávě a filmu.
 title_background: /images/kavarna-praha-kino.jpg
-opening_hours: 'po-pá: 9 - 20<br />so + ne: 14 - 21<br />16. 3. do 17:30'
+opening_hours: 'po-pá: 9 - 20<br />so + ne: 10 - 18<br />'
 call_to_action:
-  enabled: false
-  icon: glass
+  enabled: true
+  icon: camera-retro
   link: '/#kontakty'
   link_text: Napiš nám
-  text: Nejsi kancelářský typ a miluješ kávu jako my? Tak to hledáme Tebe!
-  title: Nejsi kancelářský typ a miluješ kávu jako my? Tak to hledáme Tebe!
+  text: >-
+    22.3., 19:00 - Promítání dokumentárního filmu Co se nenosí <br /> 26.3.,
+    19:00 - Promítání dokumentárního filmu Ohrožená semínka + diskuze, KOKOZA
+    o.p.s. <br /> 27.3., 15-20 - Velikonoční blešák (více info na našem FB) <br
+    />
+  title: CO SE U NÁS DĚJE V BŘEZNU
