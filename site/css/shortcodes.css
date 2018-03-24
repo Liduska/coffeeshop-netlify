@@ -914,6 +914,13 @@ button.sc_button_size_large.aligncenter,
 	text-align:center;
 }
 
+.scheme_original .sc_call_to_action_info a {
+	color: #fff;
+}
+
+.scheme_original .sc_call_to_action_info a:hover {
+	color: #f9f8f6;
+}
 
 /* Chat
 -------------------------------------------------------------- */
