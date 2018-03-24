@@ -5,6 +5,7 @@ opening_hours: 'po-pá: 9 - 20<br />so + ne: 10 - 18<br />24.3. Zavřeno'
 call_to_action:
   enabled: true
   icon: camera-retro
+  show_link: false
   link: 'https://www.facebook.com/pg/jednokafenestaci/events/?ref=page_internal'
   link_text: Více info
   text: >-
