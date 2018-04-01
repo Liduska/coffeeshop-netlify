@@ -6,19 +6,9 @@ opening_hours: >-
   - 18 <br />
 call_to_action:
   enabled: true
-  icon: camera-retro
+  icon: bullhorn
   link: 'https://www.facebook.com/pg/jednokafenestaci/events/?ref=page_internal'
   link_text: Více info
   show_link: false
-  text: >-
-    22.3., 19:00 - Promítání dokumentárního filmu Co se nenosí<br />
-
-
-    <a
-    href="https://www.facebook.com/pg/jednokafenestaci/events/?ref=page_internal">26.3.,
-    19:00 - Promítání dokumentárního filmu Ohrožená semínka + diskuze, KOKOZA
-    o.p.s.</a><br />
-
-
-    6.4., 15-20 - Dubnový blešák (více info na našem FB) <br />
-  title: CO SE U NÁS DĚJE V BŘEZNU
+  text: '6.4., 15-20 - Dubnový blešák (více info na našem FB) <br />'
+  title: CO SE U NÁS DĚJE V DUBNU
